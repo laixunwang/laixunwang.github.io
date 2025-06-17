@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .resume-container {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+        }
+        .photo {
+            width: 120px;
+            height: 160px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 1px solid #eee;
+        }
+        .header-info {
+            flex: 1;
+        }
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .title {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .contact span {
+            display: flex;
+            align-items: center;
+        }
+        .contact span::before {
+            content: "•";
+            margin-right: 5px;
+            color: #3498db;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+        .item-title {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .company {
+            color: #3498db;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <img src="photo.jpg" alt="个人照片" class="photo">
+            <div class="header-info">
+                <div class="name">赖勋旺</div>
+                <div class="title">前端开发工程师，后端开发工程师</div>
+                <div class="contact">
+                    <span>电话：138001381234</span>
+                    <span>邮箱：693057149@email.com</span>
+                    <span>地址：深圳市南山区</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">个人简介</div>
+            <p>掌握HTML5、CSS3、JavaScript,python和Java，有移动端和PC端开发经验，前端工程化开发流程，具备良好的代码规范和团队协作能力。</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">工作经历</div>
+            <div class="item">
+                <div class="item-title">
+                    <span class="company">ABC科技有限公司</span>
+                    <span>2020.06 - 至今</span>
+                </div>
+                <div>前端开发工程师</div>
+                <ul>
+                    <li>负责公司核心产品的前端架构设计和开发，使用Vue.js框架实现响应式界面</li>
+                    <li>优化前端性能，通过代码分割和懒加载技术提升页面加载速度30%</li>
+                    <li>带领3人前端团队完成多个重点项目，协调前后端接口对接</li>
+                    <li>参与前端组件库开发，提高团队开发效率20%</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">教育背景</div>
+            <div class="item">
+                <div class="item-title">
+                    <span class="company">深圳职业技术大学</span>
+                    <span>2023.09 - 2026.06</span>
+                </div>
+                <div>通信软件 | 大专 | GPA: 3.5/4.0</div>
+                <ul>
+                    <li>主修课程：Python，Java</li>
+                    <li>获得校级二等奖学金1次</li>
+                    <li>获得校级三等奖学金2次</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">专业技能</div>
+            <div class="skills">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill">Python</div>
+                <div class="skill">网络优化</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Git</div>
+                <div class="skill">ES6+</div>
+                <div class="skill">Sass/Less</div>
+                <div class="skill">UI组件库开发</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<code_end>
